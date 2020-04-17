@@ -1,0 +1,54 @@
+.cat-item {
+    text-align: center;
+    margin: auto;
+    display: block;
+
+    .cat-icon {
+        width: 165px;
+        height: 165px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $border;
+        font-size: 60px;
+        color: $orange;
+        background-color: #fff;
+        @include transition(all 0.3s ease-in-out);
+        margin-bottom: 15px;
+
+        @include xs {
+            width: 165px;
+            height: 165px;
+            margin: auto;
+        }
+    }
+
+    .cat-name {
+        font-size: 18px;
+        color: $text;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        .cat-icon {
+            background-color: $orange;
+            color: #fff;
+            border-color: $orange;
+        }
+
+        .cat-name {
+            color: $orange;
+        }
+    }
+}
+
+.all-sec {
+    .cat-item {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .cat-icon {
+            width: 100%;
+        }
+    }
+}

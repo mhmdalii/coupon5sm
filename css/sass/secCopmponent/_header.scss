@@ -1,0 +1,67 @@
+.sec-header {
+    font-size: 24px;
+    color: $text;
+    font-family: med;
+    margin: 0 auto 27px;
+    text-align: center;
+}
+
+.head {
+    color: $text;
+    font-size: 24px;
+    font-family: bold;
+    margin-bottom: 20px;
+
+    @include xs {
+        text-align: center;
+    }
+}
+
+.subhead {
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    @include xs {
+        text-align: center;
+    }
+}
+
+.page-content {
+    .head {
+        margin-bottom: 30px;
+
+        @include xs {
+            text-align: center;
+        }
+    }
+}
+
+.about-page {
+    .subhead {
+        font-family: bold;
+        color: $text;
+    }
+}
+
+.contact-page {
+    .subhead {
+        color: $grey;
+    }
+}
+
+.sec-head {
+    font-size: 22px;
+    color: $text;
+    font-family: bold;
+    margin-bottom: 35px;
+
+    @include sm {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.thanx-text {
+    font-size: 20px;
+    color: $text;
+}

@@ -1,0 +1,144 @@
+.imgs {
+    position: relative;
+
+    .item-img {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            width: 100%;
+            backface-visibility: hidden;
+        }
+    }
+
+    .cat {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 28px;
+        color: #fff;
+        border-radius: 14px;
+        padding: 0 20px;
+        transition: 0.3s;
+        z-index: 9;
+
+        &.per {
+            background-color: $orange;
+        }
+
+        &.teach {
+            background-color: $baby;
+        }
+
+        &.elec {
+            background-color: $brown;
+        }
+
+        &.apps {
+            background-color: #7e86ff;
+        }
+
+        &.smarts {
+            background-color: #55c95b;
+        }
+
+        &:hover {
+            background-color: $orange;
+        }
+    }
+}
+
+.item {
+    margin: auto;
+
+    * {
+        @include transition(all 0.3s ease-in-out);
+    }
+
+
+
+    .store {
+        width: 70px;
+        height: 70px;
+        border: none;
+        position: absolute;
+        bottom: -15px;
+        right: 15px;
+        padding: 4px;
+        margin: 0;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    .item-desc {
+        padding: 26px 10px 0;
+    }
+
+    .item-name {
+        font-size: 18px;
+        color: $text;
+        line-height: 1.444;
+        height: 50px;
+        display: inline-block;
+        margin-bottom: 18px;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .new-price {
+        font-size: 18px;
+        color: $text;
+        font-family: bold;
+        display: block;
+        margin-bottom: 1px;
+    }
+
+    .old-price {
+        font-size: 18px;
+        color: $text;
+        text-decoration: line-through;
+    }
+
+    .sale {
+        font-size: 18px;
+        color: $green;
+        margin-right: 7px;
+    }
+
+
+
+    .item-text {
+        font-size: 15px;
+    }
+
+    &:hover {
+        .item-img {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.blog-sec {
+    margin-top: 70px;
+
+    .item-desc {
+        padding-left: 0;
+    }
+
+    .item-name {
+        font-size: 17px;
+        color: $text;
+        font-family: bold;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
