@@ -3185,6 +3185,10 @@ header ._2nd-sec {
   background: #ff9436;
 }
 
+.stores-slider {
+  padding-top: 10px;
+}
+
 .imgs {
   position: relative;
 }
@@ -3687,6 +3691,14 @@ header ._2nd-sec {
 footer {
   padding-top: 65px;
   background-color: #4d4d4d;
+}
+@media (max-width: 992px) {
+  footer {
+    padding-bottom: 100px;
+  }
+  footer.padd {
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 992px) {
   footer .logo {
